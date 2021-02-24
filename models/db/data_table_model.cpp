@@ -92,6 +92,9 @@ delegates::EditorType DataTableModel::editorType(
             // TODO: date, time, year editors ...
 
         }
+    } else if (typeCategoryForColumn(index.column())
+               == meow::db::DataTypeCategoryIndex::Enum) {
+        return delegates::EditorType::enumEdit;
     }
 
     return delegates::EditorType::defaultEditor;
@@ -387,7 +390,7 @@ QString DataTableModel::rowCountStats() const
 
         if (table->engineStr() == "InnoDB") {
             result += " (" + QObject::tr("approximately") + ")";
-        }        
+        }
         if (isLimited()) {
             result += ", " + QObject::tr("limited to");
             result += " " + meow::helpers::formatNumber(rowCount());

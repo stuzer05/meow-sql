@@ -61,6 +61,8 @@ meow::db::DataTypeCategoryIndex meow::db::categoryOfDataType(meow::db::DataTypeI
         return DataTypeCategoryIndex::Binary;
 
     case DataTypeIndex::Enum:
+        return DataTypeCategoryIndex::Enum;
+
     case DataTypeIndex::Set:
     case DataTypeIndex::Bool:
     case DataTypeIndex::Unknown:

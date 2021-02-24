@@ -13,6 +13,7 @@ enum class DataTypeCategoryIndex {
     Binary,
     Temporal,
     Spatial,
+    Enum,
     Other
     // TODO: add Arrays
 };

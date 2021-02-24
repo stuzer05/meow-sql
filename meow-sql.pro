@@ -149,6 +149,7 @@ SOURCES += main.cpp\
     models/delegates/edit_query_data_delegate.cpp \
     models/delegates/date_time_item_editor_wrapper.cpp \
     models/delegates/line_edit_item_editor_wrapper.cpp \
+    models/delegates/enum_item_editor_wrapper.cpp \
     models/forms/connection_parameters_form.cpp \
     models/forms/edit_database_form.cpp \
     models/forms/export_database_form.cpp \
@@ -319,6 +320,7 @@ HEADERS  +=  app/actions.h \
     models/delegates/edit_query_data_delegate.h \
     models/delegates/date_time_item_editor_wrapper.h \
     models/delegates/line_edit_item_editor_wrapper.h \
+    models/delegates/enum_item_editor_wrapper.h \
     models/forms/connection_parameters_form.h \
     models/forms/edit_database_form.h \
     models/forms/export_database_form.h \

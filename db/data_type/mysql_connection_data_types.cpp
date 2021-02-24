@@ -246,7 +246,7 @@ const QList<DataTypePtr> & MySQLConnectionDataTypes::list()
             FIELD_TYPE_ENUM,
             "ENUM",
             true, // hasLength
-            DataTypeCategoryIndex::Other,
+            DataTypeCategoryIndex::Enum,
             "'Y','N'" // defLengthSet
         )));
 
